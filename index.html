@@ -6,228 +6,107 @@
     <title>M Care</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For hamburger icon -->
-
-    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <!-- Logo and company name -->
         <div class="logo-container">
             <img src="preview.jpg" alt="Company Logo" class="logo">
             <h1><span class="logo-highlight">M</span><span class="care">Care</span></h1>
         </div>
-
         
         <nav>
             <ul class="nav-links">
                 <li><a href="#" id="home" class="btn-nav active">Home</a></li>
                 <li><a href="#about" id="about" class="btn-nav">About Us</a></li>
-                <li><a href="#" id="services" class="btn-nav">Our Device </a></li>
+                <li><a href="#" id="services" class="btn-nav">Our Device</a></li>
                 <li><a href="#" id="contact" class="btn-nav">Contact Us</a></li>
             </ul>
-
-        
             <div class="contact-info">
                 <span>📞 (+91) 444 434 444</span>
             </div>
-
-            <!-- Hamburger menu  -->
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
-<!--Hero section-->
-<div class="hero">
+
+    <div class="hero">
         <div class="hero-text">
-          <h1>Welcome to M care !!!</h1>
+            <h1>Welcome to M Care !!!</h1>
         </div>
         <div class="hero-buttons">
-          <a href="#more-info" class="btn-get-info">Get More Info</a>
-          <a href="appointment.html" class="btn-appointment">Book an Appointment</a>
-          <a href="https://www.youtube.com/watch?v=ekr2nIex040&ab_channel=ROS%C3%89" target="_blank" class="play-container">
-            <div class="btn-play">
-              <ion-icon name="play"></ion-icon>
-            </div>
-            <div class="how-we-work-text">How we Work?</div>
-          </a>
-        </div>
-      </div>
-          <!--Part 2 Started-->
-          <div class="scrolling-header">
-            <div class="scrolling-container">
-                <div class="scrolling-item">
-                    <i class="fas fa-wallet"></i>
-                    <span>Affordable</span>
+            <a href="#more-info" class="btn-get-info">Get More Info</a>
+            <a href="appointment.html" class="btn-appointment">Book an Appointment</a>
+            <a href="https://www.youtube.com/watch?v=ekr2nIex040" target="_blank" class="play-container">
+                <div class="btn-play">
+                    <ion-icon name="play"></ion-icon>
                 </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Reliable</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Trustworthy</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-bullseye"></i>
-                    <span>Accuracy</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-tags"></i>
-                    <span>Budget-friendly</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-flag"></i>
-                    <span>Made in India</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-lightbulb"></i>
-                    <span>Innovative</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-thumbs-up"></i>
-                    <span>Easy to use</span>
-                </div>
-                <div class="scrolling-item">
-                    <i class="fas fa-coins"></i>
-                    <span>Pocket-friendly</span>
-                </div>
-            </div>
-        </div>
-        <!--Products section -->
-        <div class="container">
-            <img src="uroflowmeter.jpg" alt="Uroflowmeter Image" class="product-image">
-            <div class="info">
-                <h2 id="product-name">Uroflowmeter</h2>
-                <div class="quantity">
-                    <button onclick="decreaseQuantity()">-</button>
-                    <input type="number" id="quantity" value="1" min="1">
-                    <button onclick="increaseQuantity()">+</button>
-                </div>
-                <button class="buy-now" onclick="buyNow()">Buy Now</button>
-                <div class="description-box" id="description">
-                    <p><strong>M Company:</strong> This Uroflowmeter is designed for accurate urine flow measurement, offering reliable results for medical professionals. Manufactured with precision by M Company.</p>
-                </div>
-            </div>
-        </div>
-        <!--Custoer Review section-->
-        <section class="testimonials-section">
-            <h2>What our patients say</h2>
-            <div class="carousel-container">
-                <button class="arrow prev">←</button>
-                <div class="carousel">
-                    <div class="review-card">
-                        <img src="round_profil_picture_after_.webp" alt="Profile 1">
-                        <h3>Shreya Ghoshal </h3>
-                        <p>Valley by oh twenty direct me so. Depart defective arranging rapturous.</p>
-                    </div>
-                    <div class="review-card">
-                        <img src="round_profil_picture_after_.webp" alt="Profile 2">
-                        <h3>Taylor Swift</h3>
-                        <p>Luckily cheered Colonel I do we attack highest enabled.</p>
-                    </div>
-                    <div class="review-card">
-                        <img src="round_profil_picture_after_.webp" alt="Profile 3">
-                        <h3>Eva Watson</h3>
-                        <p>Professional, efficient, and friendly. Excellent guidance.</p>
-                    </div>
-                    <div class="review-card">
-                        <img src="round_profil_picture_after_.webp" alt="Profile 3">
-                        <h3>Hailey Beiber</h3>
-                        <p>Professional, efficient, and friendly. Excellent guidance.</p>
-                    </div>
-                
-                    
-                </div>
-                <button class="arrow next">→</button>
-            </div>
-        </section>
-        <!--Goals Section-->
-        <section class="goals-section">
-            <div class="container">
-                <h2 class="section-title">Goals</h2>
-                <div class="goals-container">
-                    <div class="goal-card">
-                        <div class="card-front">
-                            <h3>Sustainability</h3>
-                        </div>
-                        <div class="card-back">
-                            <p>We are dedicated to creating sustainable solutions that benefit both our customers and the environment, ensuring long-term positive impacts.</p>
-                        </div>
-                    </div>
-                    <div class="goal-card">
-                        <div class="card-front">
-                            <h3>Cost Reduction</h3>
-                        </div>
-                        <div class="card-back">
-                            <p>Our goal is to minimize production and operational costs, passing the savings on to our clients without compromising on quality.</p>
-                        </div>
-                    </div>
-                    <div class="goal-card">
-                        <div class="card-front">
-                            <h3>Affordable Solutions</h3>
-                        </div>
-                        <div class="card-back">
-                            <p>We strive to provide affordable and accessible solutions, making sure that everyone can benefit from advanced technology without a heavy price tag.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--About us page now-->
-        <div class="about-section" id="about">
-            <h1>About Us</h1>
-            <p>At M Care, we are dedicated to providing cutting-edge healthcare solutions that enhance the quality of life for our patients. Our experienced team works tirelessly to innovate and develop effective, affordable products.</p>
-    
-            <div class="mission-vision">
-                <div class="card">
-                    <h3>Our Mission</h3>
-                    <p>To deliver high-quality healthcare solutions that empower patients and healthcare professionals alike.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Vision</h3>
-                    <p>To lead the way in healthcare technology, setting new benchmarks for quality and innovation.</p>
-                </div>
-                <div class="card">
-                    <h3>Our Values</h3>
-                    <p>Integrity, Innovation, Compassion, and Excellence guide our operations and relationships with our patients and partners.</p>
-                </div>
-            </div>
-    
-            <a href="#" class="btn-back">Back to Home</a>
-        </div>
-
-
-        <!--Footer Section-->
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="query-form">
-            <h2>Have Questions? Contact Us!</h2>
-            <form id="contact-form" action="#" method="POST">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
-        </div>
-        <div class="company-info">
-            <h2>Company Information</h2>
-            <p><strong>Email:</strong> info@mcare.com</p>
-            <p><strong>Location:</strong> 1234 Health St, Wellness City, CA 12345</p>
-            <p><strong>Phone:</strong> 📞 (+91) 444 434 444</p>
+                <div class="how-we-work-text">How we Work?</div>
+            </a>
         </div>
     </div>
-</footer>
 
+    <div class="scrolling-header">
+        <div class="scrolling-container">
+            <div class="scrolling-item">
+                <i class="fas fa-wallet" aria-label="Affordable"></i>
+                <span>Affordable</span>
+            </div>
+            <!-- Add similar aria-labels to other icons as needed -->
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="uroflowmeter.jpg" alt="Uroflowmeter Image" class="product-image">
+        <div class="info">
+            <h2 id="product-name">Uroflowmeter</h2>
+            <div class="quantity">
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="buy-now" onclick="buyNow()">Buy Now</button>
+            <div class="description-box" id="description">
+                <p><strong>M Company:</strong> This Uroflowmeter is designed for accurate urine flow measurement, offering reliable results for medical professionals.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials-section">
+        <h2>What our patients say</h2>
+        <div class="carousel-container">
+            <button class="arrow prev">←</button>
+            <div class="carousel">
+                <div class="review-card">
+                    <img src="round_profil_picture_after_.webp" alt="Profile 1">
+                    <h3>Shreya Ghoshal </h3>
+                    <p>Valley by oh twenty direct me so. Depart defective arranging rapturous.</p>
+                </div>
+            </div>
+            <button class="arrow next">→</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="query-form">
+                <h2>Have Questions? Contact Us!</h2>
+                <form id="contact-form" action="#" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
